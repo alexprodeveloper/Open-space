@@ -1,0 +1,142 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: black;
+}
+
+.space {
+  width: 1400px;
+  height: 100vh;
+  background: url("img/space.png");
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  position: relative;
+}
+
+.planet-area {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.planet {
+  position: relative;
+  top: 220px;
+  right: 20px;
+  z-index: 2;
+}
+
+.rocket {
+  position: absolute;
+  left: 333px;
+  top: 200px;
+  transform: rotate(20deg);
+  z-index: 1;
+}
+
+.control-panel {
+  position: absolute;
+  padding: 20px;
+  top: 100px;
+  right: 20px;
+  background:
+    linear-gradient(63deg, #999 23%, transparent 23%) 7px 0,
+    linear-gradient(63deg, transparent 74%, #999 78%),
+    linear-gradient(63deg, transparent 34%, #999 38%, #999 58%, transparent 62%),
+    #444;
+  background-size: 16px 48px;
+  z-index: 10;
+  box-sizing: border-box;
+}
+
+.control-panel__second {
+  top: 600px;
+  right: 20px;
+}
+
+.control-panel__inner {
+  z-index: 11;
+  padding: 30px;
+  border-radius: 20px;
+  background: #032027;
+}
+
+.password {
+  padding: 8px 12px;
+  border-radius: 7px;
+  border: 2px dashed #444444;
+  margin-right: 50px;
+  background: #999999;
+}
+
+.password::placeholder {
+  color: black;
+}
+
+.btn {
+  padding: 8px 15px;
+  border-radius: 7px;
+  background: #999999;
+  border: 2px dashed #444444;
+}
+
+.check-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.check-btn {
+  width: 25px;
+  height: 25px;
+  background: #999999;
+}
+
+.levers {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lever {
+  transform: rotate(-90deg);
+  margin-left: -50px;
+}
+
+.launch-wrap {
+  margin-top: 100px;
+}
+
+.btn-launch {
+  margin-top: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  color: #d1d1d1;
+  font-size: 20px;
+}
+
+.btn-restart {
+  margin-top: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.settings__container {
+  margin-top: 30px;
+}
